@@ -1,4 +1,4 @@
-﻿## Interface: 80000
+﻿## Interface: 90001
 ## Title: Minimap Button Frame
 ## Notes: Collects the minimap buttons and puts them into a moveable frame.
 ## Notes-deDE: Sammelt die Minikarte Tasten und stellt sie in einen beweglichen Rahmen.

@@ -1931,19 +1931,32 @@ function MBFC_ColorLocked()
 	local green = bachMBF.db.profile.MBFBackdropColor.Green;
 	local blue = bachMBF.db.profile.MBFBackdropColor.Blue;
 	local opacity = bachMBF.db.profile.MBFBackdropColor.Alpha;	
+	local backdrop = {
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tileSize = 16,
+        edgeSize = 16,
+		insets = {top = 5, left = 5, bottom = 5, right = 5},
+	}
 
+	Mixin(MBFRestoreButtonFrame, BackdropTemplateMixin)
 	MBFRestoreButtonFrame:SetBackdropColor(red, green, blue, opacity);
 
 	if ((bachMBF.db.profile.locked) and (bachMBF.db.profile.colorLocked == "All")) then
+		MinimapButtonFrame:SetBackdrop(backdrop)
 		MinimapButtonFrame:SetBackdropColor(0,0,0,0);
 		MinimapButtonFrame:SetBackdropBorderColor(0,0,0,0);
 	elseif ((bachMBF.db.profile.locked) and (bachMBF.db.profile.colorLocked == "Border")) then
+		MinimapButtonFrame:SetBackdrop(backdrop)
 		MinimapButtonFrame:SetBackdropColor(red, green, blue, opacity);
 		MinimapButtonFrame:SetBackdropBorderColor(0,0,0,0);
 	elseif ((bachMBF.db.profile.locked) and (bachMBF.db.profile.colorLocked == "Background")) then
+		MinimapButtonFrame:SetBackdrop(backdrop)
 		MinimapButtonFrame:SetBackdropColor(0,0,0,0);
 		MinimapButtonFrame:SetBackdropBorderColor(1,1,1,1);
 	else
+		Mixin(MinimapButtonFrame, BackdropTemplateMixin)
+		MinimapButtonFrame:SetBackdrop(backdrop)
 		MinimapButtonFrame:SetBackdropColor(red, green, blue, opacity);
 		MinimapButtonFrame:SetBackdropBorderColor(1,1,1,1);
 	end
