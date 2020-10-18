@@ -1,6 +1,6 @@
 ﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 
-<Frame name="MinimapButtonFrame" toplevel="true" parent="UIParent" movable="true" clampedToScreen="true" hidden="false" frameStrata="MEDIUM">
+<Frame name="MinimapButtonFrame" toplevel="true" parent="UIParent" movable="true" clampedToScreen="true" hidden="false" frameStrata="MEDIUM" inherits="BackdropTemplate">
 	<Size x="20" y="20"/>
 	<Anchors>
 		<Anchor point="CENTER"/>
@@ -115,7 +115,7 @@
   </Scripts>
 </Frame>
 
-<Frame name="MBFRestoreButtonFrame" parent="UIParent" enableMouse="true" movable="true" hidden="false" clampedToScreen="true" frameStrata="LOW">
+<Frame name="MBFRestoreButtonFrame" parent="UIParent" enableMouse="true" movable="true" hidden="false" clampedToScreen="true" frameStrata="LOW" inherits="BackdropTemplate">
 	<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="false">
 	    <BackgroundInsets>
 	        <AbsInset left="5" right="5" top="5" bottom="5" />
