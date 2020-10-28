@@ -32,19 +32,21 @@ L["Version"] = true
 L["info"] = true
 L["show"] = "montrer"
 L["hide"] = "masquer"
+L["reload"] = "recharger"
 L["help"] = "aide"
 L["debug"] = true
 L["config"] = true
 L["remove"] = "supprimer"
 L["add"] = "ajouter"
-L["MBF_SLASH_Detail1"] = "Usage /mbf [ ajouter | supprimer | info | config | montrer | masquer | aide ] "
+L["MBF_SLASH_Detail1"] = "Usage /mbf [ ajouter | supprimer | info | config | montrer | masquer | recharger | aide ] "
 L["MBF_SLASH_Detail2"] = "ajouter - ajoute un bouton d'auto recueillies au cadre"
 L["MBF_SLASH_Detail3"] = "supprimer - supprime un bouton réunis du cadre"
 L["MBF_SLASH_Detail4"] = "info - affiche des informations sur l'objet sous le curseur"
 L["MBF_SLASH_Detail5"] = "config - Affiche l'écran de configuration."
 L["MBF_SLASH_Detail6"] = "montrer - Montre les principaux MBF écran. "
 L["MBF_SLASH_Detail7"] = "masquer - Il cache les principaux MBF écran."
-L["MBF_SLASH_Detail8"] = "aide - Spectacles commande aide et d'information"
+L["MBF_SLASH_Detail8"] = "recharger - Réapplique la texture. Cela corrige les icônes noircies."
+L["MBF_SLASH_Detail9"] = "aide - Spectacles commande aide et d'information"
 
 -- Display Info
 L["Unnamed Object"] = "Objet sans nom"

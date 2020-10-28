@@ -1,6 +1,6 @@
 ﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 
-<Frame name="MinimapButtonFrame" toplevel="true" parent="UIParent" movable="true" clampedToScreen="true" hidden="false" frameStrata="MEDIUM" inherits="BackdropTemplate">
+<Frame name="MinimapButtonFrame" toplevel="true" parent="UIParent" movable="true" clampedToScreen="true" hidden="false" frameStrata="MEDIUM" inherits="BackdropTemplate" >
 	<Size x="20" y="20"/>
 	<Anchors>
 		<Anchor point="CENTER"/>
@@ -30,6 +30,8 @@
 			<OnClick>
 				if (IsShiftKeyDown()) then						
 					MBFC_Toggle();
+                elseif ( IsControlKeyDown() and button == "RightButton") then
+                    textureFrame(MinimapButtonFrame);
 				elseif ( button == "RightButton" ) then
 					MBFC_RollUp(1);
 				end
@@ -115,7 +117,7 @@
   </Scripts>
 </Frame>
 
-<Frame name="MBFRestoreButtonFrame" parent="UIParent" enableMouse="true" movable="true" hidden="false" clampedToScreen="true" frameStrata="LOW" inherits="BackdropTemplate">
+<Frame name="MBFRestoreButtonFrame" parent="UIParent" enableMouse="true" movable="true" hidden="false" clampedToScreen="true" frameStrata="LOW">
 	<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="false">
 	    <BackgroundInsets>
 	        <AbsInset left="5" right="5" top="5" bottom="5" />
@@ -152,6 +154,8 @@
 			<OnClick>
 				if (IsShiftKeyDown()) then						
 					MBFC_Toggle();
+                elseif ( IsControlKeyDown() and button == "RightButton") then
+                    textureFrame(MinimapButtonFrame);
 				elseif ( button == "RightButton" ) then
 					MBFC_RollUp(2);
 				end

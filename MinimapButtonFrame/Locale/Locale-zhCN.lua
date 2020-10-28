@@ -33,19 +33,21 @@ L["Version"] = "版本"
 L["info"] = true
 L["show"] = true
 L["hide"] = true
+L["reload"] = true
 L["help"] = true
 L["debug"] = true
 L["config"] = true
 L["remove"] = true
 L["add"] = true
-L["MBF_SLASH_Detail1"] = "用法 /mbf [ add | remove | info | config | show | hide | help ] "
+L["MBF_SLASH_Detail1"] = "用法 /mbf [ add | remove | info | config | show | hide | reload | help ] "
 L["MBF_SLASH_Detail2"] = "add - 增加非自动采集按钮到MBF"
 L["MBF_SLASH_Detail3"] = "remove - 移除MBF采集的按钮"
 L["MBF_SLASH_Detail4"] = "info - 显示光标出按钮信息"
 L["MBF_SLASH_Detail5"] = "config - 显示设置窗口."
 L["MBF_SLASH_Detail6"] = "show - 显示MBF."
 L["MBF_SLASH_Detail7"] = "hide - 隐藏MBF."
-L["MBF_SLASH_Detail8"] = "help - 显示命令的帮助和信息"
+L["MBF_SLASH_Detail8"] = "reload - 重新应用纹理。 这将纠正变黑的图标."
+L["MBF_SLASH_Detail9"] = "help - 显示命令的帮助和信息"
 
 -- Display Info
 L["Unnamed Object"] = "无效对象"

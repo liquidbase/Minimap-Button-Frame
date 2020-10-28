@@ -32,19 +32,21 @@ L["Version"] = true
 L["info"] = "infos"
 L["show"] = "zeigen"
 L["hide"] = "verstecken"
+L["reload"] = "neuladen"
 L["help"] = "hilfe"
 L["debug"] = true
 L["config"] = "konfiguration"
 L["remove"] = "entfernen"
 L["add"] = "hinzufügen"
-L["MBF_SLASH_Detail1"] = "Usage /mbf [ hinzufügen | entfernen | infos | konfiguration | zeigen | verstecken | hilfe ] "
+L["MBF_SLASH_Detail1"] = "Usage /mbf [ hinzufügen | entfernen | infos | konfiguration | zeigen | verstecken | neuladen | hilfe ] "
 L["MBF_SLASH_Detail2"] = "hinzufügen - einen nicht automatisch eingesammelten Button dem MBF hinzufügen"
 L["MBF_SLASH_Detail3"] = "entfernen - entfernt einen Button aus dem MBF"
 L["MBF_SLASH_Detail4"] = "infos - zeigt Informationen über das Objekt unter dem Mauscursor"
 L["MBF_SLASH_Detail5"] = "konfiguration - zeigt das Konfigurationsfenster"
 L["MBF_SLASH_Detail6"] = "zeigen - zeigt den MBF an"
 L["MBF_SLASH_Detail7"] = "verstecken - blendet den MBF aus"
-L["MBF_SLASH_Detail8"] = "hilfe - zeigt Informationen und Hilfe zu Befehlen an"
+L["MBF_SLASH_Detail8"] = "neuladen - Wendet die Textur erneut an. Dadurch werden die geschwärzten Symbole korrigiert."
+L["MBF_SLASH_Detail9"] = "hilfe - zeigt Informationen und Hilfe zu Befehlen an"
 
 -- Display Info
 L["Unnamed Object"] = "Unbenanntes Objekt"

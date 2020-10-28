@@ -1,4 +1,4 @@
-﻿Minimap Button Frame v3.1.10d Readme.txt
+﻿Minimap Button Frame v3.2.0 Readme.txt
 
 Installation is the same as it is for most other WoW addons.  
 Unpack the files to your  Worldofwarcraft/Interface/Addons   directory.
@@ -219,7 +219,10 @@ History
 	Update - Updated Libraries
 3.1.10f Update - Added CrossRealmAssist button to exceptions
 	Update - Changed handling of newMail icon.  Thanks HgD!	
-
+3.1.12hm Update - Added command '/mbf reload' to re-apply the texture which fixes the black blobs in front of icons
+         Update - Added option to Ctrl + Right Click the MBF button (while icons are showing) to do the equivalent of '/mbf reload'
+3.2.0 Fixed - Shadowland fixes for setBackdrop
+3.2.1 Fixed - Black blob texture bug fixed (hopefully)
 
 Known Incompatibilities / Bugs
 

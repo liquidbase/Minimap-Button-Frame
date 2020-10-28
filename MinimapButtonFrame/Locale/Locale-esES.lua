@@ -32,19 +32,21 @@ L["Version"] = true
 L["info"] = true
 L["show"] = "mostrar"
 L["hide"] = "ocultar"
+L["reload"] = "recargar"
 L["help"] = "ayuda"
 L["debug"] = true
 L["config"] = true
 L["remove"] = "eliminar"
 L["add"] = "añadir"
-L["MBF_SLASH_Detail1"] = "Uso / mbf [añadir | eliminar | info | config | mostrar | ocultar | ayuda] "
+L["MBF_SLASH_Detail1"] = "Uso / mbf [añadir | eliminar | info | config | mostrar | ocultar | recargar | ayuda] "
 L["MBF_SLASH_Detail2"] = "añadir - añade un auto no se reunieron botón para el marco"
 L["MBF_SLASH_Detail3"] = "eliminar - elimina un botón se reunieron el marco de"
 L["MBF_SLASH_Detail4"] = "info - Muestra información sobre el objeto bajo el cursor"
 L["MBF_SLASH_Detail5"] = "config - Muestra la pantalla de configuración."
 L["MBF_SLASH_Detail6"] = "mostrar - Muestra la pantalla principal MBF"
 L["MBF_SLASH_Detail7"] = "ocultar - Oculta la pantalla principal MBF."
-L["MBF_SLASH_Detail8"] = "ayuda - Muestra comando ayuda e información"
+L["MBF_SLASH_Detail8"] = "recargar - Vuelve a aplicar la textura. Esto corrige los iconos ennegrecidos."
+L["MBF_SLASH_Detail9"] = "ayuda - Muestra comando ayuda e información"
 
 -- Display Info
 L["Unnamed Object"] = "Sin nombre del objeto"

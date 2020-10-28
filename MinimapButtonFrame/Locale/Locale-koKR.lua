@@ -33,19 +33,21 @@ L["Version"] = "버전"
 L["info"] = "정보"
 L["show"] = "표시"
 L["hide"] = "숨김"
+L["reload"] = "새로 고침"
 L["help"] = "도움말"
 L["debug"] = "디버그"
 L["config"] = "설정"
 L["remove"] = "삭제"
 L["add"] = "추가"
-L["MBF_SLASH_Detail1"] = "사용법 /mbf [ 추가 | 제거 | 정보 | 설정 | 표시 | 숨김 | 도움말 ] ";
+L["MBF_SLASH_Detail1"] = "사용법 /mbf [ 추가 | 제거 | 정보 | 설정 | 표시 | 숨김 | 새로 고침 | 도움말 ] ";
 L["MBF_SLASH_Detail2"] = "추가 - 자동으로 수집되지 않은 버튼을 창에 추가";
 L["MBF_SLASH_Detail3"] = "제거 - 창에서 수집된 버튼을 제거";
 L["MBF_SLASH_Detail4"] = "정보 - 커서 아래의 개체에 대한 정보를 표시";
 L["MBF_SLASH_Detail5"] = "설정 - 설정창을 화면에 표시";
 L["MBF_SLASH_Detail6"] = "표시 - 주 MBF를 화면에 표시";
-L["MBF_SLASH_Detail7"] = "숨김 - 주 MBF를 화면에서 숨김";
-L["MBF_SLASH_Detail8"] = "도움말 - 정보와 명령어 도움말을 표시";
+L["MBF_SLASH_Detail7"] = "숨김 - 텍스처를 다시 적용합니다. 검은 색 아이콘이 수정됩니다.";
+L["MBF_SLASH_Detail8"] = "새로 고침  -  텍스처를 다시 적용합니다. 검은 색 아이콘이 수정됩니다.";
+L["MBF_SLASH_Detail9"] = "도움말 - 정보와 명령어 도움말을 표시";
 
 -- Display Info
 L["Unnamed Object"] = "이름없는 개체";

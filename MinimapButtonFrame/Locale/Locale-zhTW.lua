@@ -32,19 +32,21 @@ L["Version"] = "版本"
 L["info"] = true
 L["show"] = true
 L["hide"] = true
+L["reload"] = true
 L["help"] = true
 L["debug"] = true
 L["config"] = true
 L["remove"] = true
 L["add"] = true
-L["MBF_SLASH_Detail1"] = "用法: /mbf [ add | remove | info | config | show | hide | help ] "
+L["MBF_SLASH_Detail1"] = "用法: /mbf [ add | remove | info | config | show | hide | reload | help ] "
 L["MBF_SLASH_Detail2"] = "   add - 增加非自動收納的按鈕到MBF"
 L["MBF_SLASH_Detail3"] = "remove - 移除已被MBF收納的按鈕"
 L["MBF_SLASH_Detail4"] = "  info - 顯示游標下的按鈕資訊"
 L["MBF_SLASH_Detail5"] = "config - 顯示設定視窗"
 L["MBF_SLASH_Detail6"] = "  show - 顯示MBF"
 L["MBF_SLASH_Detail7"] = "  hide - 隱藏MBF"
-L["MBF_SLASH_Detail8"] = "  help - 顯示命令的說明和資訊"
+L["MBF_SLASH_Detail8"] = "reload - 重新應用紋理。 這將糾正變黑的圖標。"
+L["MBF_SLASH_Detail9"] = "  help - 顯示命令的說明和資訊"
 
 -- Display Info
 L["Unnamed Object"] = "無效對象"

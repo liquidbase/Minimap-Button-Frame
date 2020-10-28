@@ -31,19 +31,21 @@ L["Version"] = true
 L["info"] = true
 L["show"] = true
 L["hide"] = true
+L["reload"] = true
 L["help"] = true
 L["debug"] = true
 L["config"] = true
 L["remove"] = true
 L["add"] = true
-L["MBF_SLASH_Detail1"] = "Usage /mbf [ add | remove | info | config | show | hide | help ] "
+L["MBF_SLASH_Detail1"] = "Usage /mbf [ add | remove | info | config | show | hide | reload | help ] "
 L["MBF_SLASH_Detail2"] = "add - adds a non auto gathered button to the frame"
 L["MBF_SLASH_Detail3"] = "remove - removes a gathered button from the frame"
 L["MBF_SLASH_Detail4"] = "info - Shows information about the object under the cursor"
 L["MBF_SLASH_Detail5"] = "config - Shows the configuration screen."
 L["MBF_SLASH_Detail6"] = "show - Shows the main MBF screen."
 L["MBF_SLASH_Detail7"] = "hide - Hides the main MBF screen."
-L["MBF_SLASH_Detail8"] = "help - Shows command help and information"
+L["MBF_SLASH_Detail8"] = "reload - Re-applies the texture.  This fixes the blackend icons."
+L["MBF_SLASH_Detail9"] = "help - Shows command help and information"
 
 -- Display Info
 L["Unnamed Object"] = true

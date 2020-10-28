@@ -752,7 +752,7 @@ function bachMBF:OnInitialize()
 			if (IsShiftKeyDown()) then						
 				MBFC_Toggle();
 			elseif ( msg == "LeftButton" ) then
-				MBFC_Visible(2, MinimapButtonFrame:GetParent():GetName());
+                MBFC_Visible(2, MinimapButtonFrame:GetParent():GetName());
 			end
 		end,
 		icon = "Interface\\Icons\\INV_Misc_Coin_11",
@@ -1931,32 +1931,32 @@ function MBFC_ColorLocked()
 	local green = bachMBF.db.profile.MBFBackdropColor.Green;
 	local blue = bachMBF.db.profile.MBFBackdropColor.Blue;
 	local opacity = bachMBF.db.profile.MBFBackdropColor.Alpha;	
-	local backdrop = {
-		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-		tileSize = 16,
-        edgeSize = 16,
-		insets = {top = 5, left = 5, bottom = 5, right = 5},
-	}
 
-	Mixin(MBFRestoreButtonFrame, BackdropTemplateMixin)
+    --Begin some SL fixes                                            
+    if not MinimapButtonFrame.SetBackdrop then                       
+        Mixin(MinimapButtonFrame, BackdropTemplateMixin)             
+    end                                                              
+                                                                     
+    if not MBFRestoreButtonFrame.SetBackdrop then                    
+        Mixin(MBFRestoreButtonFrame, BackdropTemplateMixin)         
+    end                                                              
+    MinimapButtonFrame.backdropInfo = TOOLTIP_BACKDROP_STYLE_DEFAULT;
+    MinimapButtonFrame:ApplyBackdrop();                              
+    --End some SL fixes                                              
+
 	MBFRestoreButtonFrame:SetBackdropColor(red, green, blue, opacity);
 
 	if ((bachMBF.db.profile.locked) and (bachMBF.db.profile.colorLocked == "All")) then
-		MinimapButtonFrame:SetBackdrop(backdrop)
 		MinimapButtonFrame:SetBackdropColor(0,0,0,0);
 		MinimapButtonFrame:SetBackdropBorderColor(0,0,0,0);
 	elseif ((bachMBF.db.profile.locked) and (bachMBF.db.profile.colorLocked == "Border")) then
-		MinimapButtonFrame:SetBackdrop(backdrop)
 		MinimapButtonFrame:SetBackdropColor(red, green, blue, opacity);
 		MinimapButtonFrame:SetBackdropBorderColor(0,0,0,0);
 	elseif ((bachMBF.db.profile.locked) and (bachMBF.db.profile.colorLocked == "Background")) then
-		MinimapButtonFrame:SetBackdrop(backdrop)
 		MinimapButtonFrame:SetBackdropColor(0,0,0,0);
 		MinimapButtonFrame:SetBackdropBorderColor(1,1,1,1);
 	else
-		Mixin(MinimapButtonFrame, BackdropTemplateMixin)
-		MinimapButtonFrame:SetBackdrop(backdrop)
+        MinimapButtonFrame:SetupTextureCoordinates();
 		MinimapButtonFrame:SetBackdropColor(red, green, blue, opacity);
 		MinimapButtonFrame:SetBackdropBorderColor(1,1,1,1);
 	end
@@ -1979,6 +1979,10 @@ function MBFC_RollUp(setting)
 		bachMBF.db.profile.rollUp = false;
 		bachMBF.db.profile.mbfHidden = false;
 		MinimapButtonFrame:Show();
+
+        --Texturebug Testing
+        --Rerunning this upon showing the frame seems to help
+        textureFrame(MinimapButtonFrame)
 	end
 end
 
